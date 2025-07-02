@@ -21,7 +21,7 @@ jobs:
       
     - name: Install CUDA      
       run: |
-        choco install cuda --version=12.2.0.53625
+        choco install cuda --version=12.5.0.56789
         
     - name: Build project
       shell: cmd
