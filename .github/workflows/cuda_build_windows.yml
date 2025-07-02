@@ -11,13 +11,13 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2      
+      uses: actions/checkout@v4    
       
     - name: Set up MSVC environment
-      uses: ilammy/msvc-dev-cmd@v1.13.0
+      uses: ilammy/msvc-dev-cmd@v1
       with:
         arch: x64
-        vsversion: "2022"
+        vsversion: "2019"
       
     - name: Install CUDA      
       run: |
